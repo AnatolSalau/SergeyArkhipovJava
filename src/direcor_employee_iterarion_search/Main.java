@@ -12,8 +12,10 @@ class Main {
         Director directorOne = new Director("Sidr","Sidorov",4);
 
         directorOne.addOneOrMoreEmployees(workerOne,workerTwo,workerThree);
+        Director directorTwo = new Director("Dasha","Sidorov",4);
+        directorTwo.addOneOrMoreEmployees(directorOne);
 
-        boolean result = SearchingInformation.isNameInArrayEmployees("Sidr", directorOne);
+        boolean result = SearchingInformation.isNameInArrayEmployees("Dasha", directorTwo);
         System.out.println(result);
 
      }
