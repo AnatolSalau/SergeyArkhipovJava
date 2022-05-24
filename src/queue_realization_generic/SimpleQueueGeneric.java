@@ -2,7 +2,7 @@ package queue_realization_generic;
 
 import java.util.Arrays;
 
-public class SimpleQueueGeneric<T> implements QueueGeneric {
+public class SimpleQueueGeneric<T> implements QueueGeneric<T> {
     private T[] queue;
     private int lastIndex;
 
@@ -33,10 +33,9 @@ public class SimpleQueueGeneric<T> implements QueueGeneric {
         }
     }
 
-
     @Override
     public T get() {
-        String result = queue[0];
+        T result = queue[0];
         //Проверяем пуста ли очередь
         if (!isEmpty()) {
             //Сдвигаем все эелементы на один к началу
