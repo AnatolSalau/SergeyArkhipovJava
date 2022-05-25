@@ -13,11 +13,22 @@ class Main {
 
         directorOne.addOneOrMoreEmployees(workerOne,workerTwo,workerThree);
         Director directorTwo = new Director("Dasha","Sidorov",4);
-        directorTwo.addOneOrMoreEmployees(directorOne);
+        Worker workerFour = new Worker("Four","Vasyliev",3);
+        Worker workerFive = new Worker("Five","Vasyliev",3);
+        directorTwo.addOneOrMoreEmployees(workerFour,workerFive,directorOne);
 
-        boolean result = SearchingInformation.isNameInArrayEmployees("Dasha", directorTwo);
+        Director directorThree = new Director("Director three", "Three", 5);
+        Worker workerSeven = new Worker("Seven","Vasyliev",3);
+        Worker workerSix = new Worker("Six","Vasyliev",3);
+        directorThree.addOneOrMoreEmployees(directorTwo,workerSeven,workerSix);
+
+        PrintInformation.printTostring(directorThree);
+
+        boolean result = SearchingInformation.isNameInArrayEmployees("Vasya", directorTwo);
         System.out.println(result);
 
+        boolean resultTwo = SearchingInformation.isNameInArrayEmployees("Vasya", directorTwo,directorOne);
+        System.out.println(resultTwo);
      }
 
 }
