@@ -18,9 +18,6 @@ public class SummingTreeValuesIteration {
             System.out.println(node.getValue());
             //Добавляем его значение в сумму значений
             sum = sum + node.getValue();
-
-            
-
             //Проверяем есть ли у него ветки
             //Если есть кладем ветки в стэк
             if (node.getRight() != null) {

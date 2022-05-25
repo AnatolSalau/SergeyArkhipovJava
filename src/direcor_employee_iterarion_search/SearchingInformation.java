@@ -4,9 +4,6 @@ import queue_realization_generic.SimpleQueueGeneric;
 import tree_binary_reqursion_deep_search.BinaryTree;
 
 class SearchingInformation {
-/*
-* Добавил еще один метод для поиска имени только у директора,
-* и переименовал старый метод с  haveNameRecursion на isNameInArrayEmployees */
         public static boolean isNameInArrayEmployees(String name, Employee rootEmployee) {
                 //результат
                 boolean haveName = false;
@@ -36,7 +33,6 @@ class SearchingInformation {
             }
                 return haveName;
         }
-
 }
 
 
