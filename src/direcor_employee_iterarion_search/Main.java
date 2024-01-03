@@ -27,7 +27,7 @@ class Main {
         boolean result = SearchingInformation.isNameInArrayEmployees("Vasya", directorTwo);
         System.out.println(result);
 
-        boolean resultTwo = SearchingInformation.isNameInArrayEmployees("Vasya", directorTwo,directorOne);
+        boolean resultTwo = SearchingInformation.isNameInArrayEmployees("Vasya", directorOne);
         System.out.println(resultTwo);
      }
 
